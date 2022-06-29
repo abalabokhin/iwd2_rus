@@ -194,12 +194,12 @@ setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 24201 - ((15 * winheight(0) + 14) / 28)
+let s:l = 39326 - ((12 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 24201
-normal! 021|
+keepjumps 39326
+normal! 02|
 wincmd w
 argglobal
 if bufexists("_") | buffer _ | else | edit _ | endif
@@ -334,14 +334,13 @@ setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 15673 - ((1 * winheight(0) + 13) / 27)
+let s:l = 20421 - ((15 * winheight(0) + 13) / 27)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 15673
-normal! 02|
+keepjumps 20421
+normal! 0
 wincmd w
-2wincmd w
 exe '1resize ' . ((&lines * 28 + 29) / 58)
 exe '2resize ' . ((&lines * 27 + 29) / 58)
 tabnext 1
