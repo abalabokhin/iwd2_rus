@@ -1,0 +1,20 @@
+BACKUP ~iwd2tra/backup~
+AUTHOR ~http://arcanecoast.ru~ //Visit the forums for questions
+VERSION ~V1.4npc-v9~
+
+LANGUAGE ~English~   ~English~ ~~
+
+LANGUAGE ~Russian~   ~Russian~ ~~
+
+BEGIN ~Icewind Dale 2 Translator [Corrected for IWD2NPC Project]~
+
+STRING_SET_RANGE #0 #41411 USING ~iwd2tra/%LANGUAGE%/tra/rec.tra~
+
+ACTION_IF FILE_EXISTS ~patch.txt~ //v2.01
+	THEN BEGIN
+	STRING_SET_RANGE #41412 #41421 USING ~iwd2tra/%LANGUAGE%/tra/rec.tra~
+	END
+
+COPY ~IWD2TRA/%LANGUAGE%/Party/Party.ini~ ~Party.ini~
+COPY ~IWD2TRA/%LANGUAGE%/Characters~ ~Characters~
+COPY ~IWD2TRA/%LANGUAGE%/Fonts-new~ ~override~

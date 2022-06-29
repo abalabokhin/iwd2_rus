@@ -1,0 +1,6 @@
+eng = original english text
+rec = modified akella
+alt = modified 1c
+
+cheers,
+prowler
