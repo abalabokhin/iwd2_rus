@@ -23,6 +23,7 @@ set fileencodings=ucs-bom,utf-8,default,latin1
 set helplang=en
 set langmap=ёйцукенгшщзхъфывап��олджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfg;jkh\\l'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
 set nomodeline
+set pastetoggle=<F29>
 set printoptions=paper:letter
 set ruler
 set runtimepath=~/.vim,~/.vim/plugged/vim-racer/,~/.vim/plugged/rust.vim/,~/.vim/plugged/vim-bracketed-paste/,~/.vim/plugged/vim-sensible/,/var/lib/vim/addons,/etc/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim82,/usr/share/vim/vimfiles/after,/etc/vim/after,/var/lib/vim/addons/after,~/.vim/plugged/rust.vim/after,~/.vim/after
@@ -195,16 +196,16 @@ setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 13534 - ((25 * winheight(0) + 13) / 27)
+let s:l = 16492 - ((26 * winheight(0) + 13) / 27)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 13534
+keepjumps 16492
 normal! 0
 wincmd w
 argglobal
 if bufexists("Russian/tra/rec_utf8.tra") | buffer Russian/tra/rec_utf8.tra | else | edit Russian/tra/rec_utf8.tra | endif
-balt English/tra/rec.tra
+balt Russian/tra/bgee.tra
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -335,20 +336,19 @@ setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 18656 - ((1 * winheight(0) + 14) / 28)
+let s:l = 21875 - ((11 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 18656
-normal! 031|
+keepjumps 21875
+normal! 015|
 wincmd w
-2wincmd w
 exe '1resize ' . ((&lines * 27 + 29) / 58)
 exe '2resize ' . ((&lines * 28 + 29) / 58)
 tabnext 1
-badd +18321 Russian/tra/rec_utf8.tra
-badd +18353 English/tra/rec.tra
-badd +1 Russian/tra/bgee.tra
+badd +21729 Russian/tra/rec_utf8.tra
+badd +21790 English/tra/rec.tra
+badd +13534 Russian/tra/bgee.tra
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
