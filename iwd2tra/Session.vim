@@ -10,10 +10,10 @@ xmap gx <Plug>NetrwBrowseXVis
 nmap gx <Plug>NetrwBrowseX
 noremap h ;
 noremap l h
+nmap <expr> <F28> XTermPasteBegin("i")
 xnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))
 vmap <expr> <F28> XTermPasteBegin("c")
-nmap <expr> <F28> XTermPasteBegin("i")
 omap <expr> <F28> XTermPasteBegin("i")
 let &cpo=s:cpo_save
 unlet s:cpo_save
@@ -195,11 +195,11 @@ setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 12831 - ((26 * winheight(0) + 13) / 27)
+let s:l = 13534 - ((25 * winheight(0) + 13) / 27)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 12831
+keepjumps 13534
 normal! 0
 wincmd w
 argglobal
@@ -335,18 +335,19 @@ setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 17792 - ((27 * winheight(0) + 14) / 28)
+let s:l = 18656 - ((1 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 17792
-normal! 0
+keepjumps 18656
+normal! 031|
 wincmd w
+2wincmd w
 exe '1resize ' . ((&lines * 27 + 29) / 58)
 exe '2resize ' . ((&lines * 28 + 29) / 58)
 tabnext 1
-badd +17707 Russian/tra/rec_utf8.tra
-badd +17761 English/tra/rec.tra
+badd +18321 Russian/tra/rec_utf8.tra
+badd +18353 English/tra/rec.tra
 badd +1 Russian/tra/bgee.tra
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
