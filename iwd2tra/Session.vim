@@ -196,11 +196,11 @@ setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 16492 - ((26 * winheight(0) + 13) / 27)
+let s:l = 22571 - ((26 * winheight(0) + 13) / 27)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 16492
+keepjumps 22571
 normal! 0
 wincmd w
 argglobal
@@ -336,19 +336,20 @@ setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 21875 - ((11 * winheight(0) + 14) / 28)
+let s:l = 31474 - ((25 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 21875
-normal! 015|
+keepjumps 31474
+normal! 032|
 wincmd w
+2wincmd w
 exe '1resize ' . ((&lines * 27 + 29) / 58)
 exe '2resize ' . ((&lines * 28 + 29) / 58)
 tabnext 1
 badd +21729 Russian/tra/rec_utf8.tra
 badd +21790 English/tra/rec.tra
-badd +13534 Russian/tra/bgee.tra
+badd +1 Russian/tra/bgee.tra
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
