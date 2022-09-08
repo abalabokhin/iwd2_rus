@@ -1,2 +1,0 @@
-thrall - in drow
-patron = in drow - check translation and think what it should be
