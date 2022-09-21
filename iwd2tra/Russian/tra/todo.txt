@@ -1,1 +1,2 @@
 Probably fix Xavier translation
+fix @27527 - after having PT english version for names
