@@ -1,12 +1,12 @@
 BACKUP ~iwd2tra/backup~
-AUTHOR ~http://arcanecoast.ru~ //Visit the forums for questions
-VERSION ~V1.5~
+AUTHOR ~https://arcanecoast.ru/forum/viewtopic.php?f=8&t=126~ //Visit the forums for questions
+VERSION ~V2.0~
 
 LANGUAGE ~English~   ~English~ ~~
 
 LANGUAGE ~Russian~   ~Russian~ ~~
 
-BEGIN ~Icewind Dale 2 Translator [Corrected for IWD2NPC Project]~
+BEGIN ~Icewind Dale 2 Translator~
 
 STRING_SET_RANGE #0 #41411 USING ~iwd2tra/%LANGUAGE%/tra/rec.tra~
 
