@@ -19,6 +19,3 @@ COPY ~IWD2TRA/%LANGUAGE%/Party/Party.ini~ ~Party.ini~
 COPY ~IWD2TRA/%LANGUAGE%/Characters~ ~Characters~
 COPY ~IWD2TRA/%LANGUAGE%/Fonts-new~ ~override~
 
-ACTION_IF NOT FILE_EXISTS ~dialogf.tlk~ THEN BEGIN
-  COPY ~dialog.tlk~ ~dialogf.tlk~
-END
